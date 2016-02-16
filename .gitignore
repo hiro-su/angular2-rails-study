@@ -21,4 +21,4 @@
 .byebug_history
 
 node_modules
-app/assets/javascript/generated
+app/assets/javascripts/generated
