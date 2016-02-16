@@ -17,9 +17,11 @@ import {AppComponent} from './components/AppComponent';
     ROUTER_DIRECTIVES
   ]
 })
+
 @RouteConfig([
   { path: '/', name: 'AppComponent', component: AppComponent }
 ])
+
 export class App {
  
   router: Router;
