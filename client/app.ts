@@ -19,7 +19,7 @@ import {AppComponent} from './components/AppComponent';
 })
 
 @RouteConfig([
-  { path: '/', name: 'AppComponent', component: AppComponent }
+  { path: '/home', name: 'AppComponent', component: AppComponent, useAsDefault: true }
 ])
 
 export class App {

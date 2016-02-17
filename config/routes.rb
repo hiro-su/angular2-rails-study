@@ -1,8 +1,7 @@
 Rails.application.routes.draw do
-  root 'home#index'
-  get 'home/index'
+  root 'templates#index'
 
-  # テンプレート
+  # Template
   get '/templates/:template/:path.html' => 'templates#template',
       constraints: { template: /.+/, path: /.+/ }, format: 'js'
 
@@ -12,6 +11,10 @@ Rails.application.routes.draw do
   get '/templates/:template/:type/:item/:path.html' => 'templates#template_type_item',
       constraints: { template: /.+/, type: /.+/, item: /.+/, path: /.+/ }, format: 'js'
 
+  # Direct Access
+  get '/home' => 'templates#index', format: false
+
+  # Routing Error
   get  '*not_found' => 'application#routing_error', format: false
   post '*not_found' => 'application#routing_error', format: false
 end
