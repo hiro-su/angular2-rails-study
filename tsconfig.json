@@ -9,9 +9,10 @@
     "noImplicitAny": false
   },
   "files": [
-    "./client/vendor.ts",
-    "./client/bootstrap.ts",
-    "./client/components/AppComponent.ts"
+    "./frontend/src/vendor.ts",
+    "./frontend/src/bootstrap.ts",
+    "./frontend/src/components/HomeComponent.ts",
+    "./frontend/src/components/HogeComponent.ts"
   ],
   "exclude": [
     "node_modules"

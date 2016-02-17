@@ -6,15 +6,15 @@ module.exports = {
   devtool: 'source-map',
   debug: true,
   entry: {
-    'vendor': './client/vendor.ts',
-    'app': './client/bootstrap.ts'
+    'vendor': './frontend/src/vendor.ts',
+    'app': './frontend/src/bootstrap.ts'
   },
   output: {
     filename: 'bundle.js',
     path: './app/assets/javascripts/generated'
   },
   resolve: {
-    root: [path.join(__dirname, 'client/assets/scripts')],
+    root: [path.join(__dirname, 'frontend/src/assets/scripts')],
     extensions: ['', '.webpack.js', '.web.js', '.ts', '.tsx', '.js']
   },
   module: {
