@@ -13,6 +13,7 @@ Rails.application.routes.draw do
 
   # Direct Access
   get '/home' => 'templates#index', format: false
+  get '/hoge' => 'templates#index', format: false
 
   # Routing Error
   get  '*not_found' => 'application#routing_error', format: false
