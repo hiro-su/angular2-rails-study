@@ -29,6 +29,6 @@ export class HomeComponent {
     }
 
     modal() {
-        jQuery('.modal').modal('show');
+        jQuery('#myModalJs').modal('show');
     }
 }
