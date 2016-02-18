@@ -17,10 +17,10 @@ export class HomeComponent {
     constructor() {
         console.log('HomeComponent.ts');
         this.items = [1, 2, 3];
-        this.users = [{ name: 'Bob', age: 1 }, { name: 'Alice', age: 12 }]
+        this.users = [{ name: 'Bob', age: 1 }, { name: 'Alice', age: 12 }];
     }
 
-    static alert() {
+    alert() {
         alert("test alert");
     }
 }

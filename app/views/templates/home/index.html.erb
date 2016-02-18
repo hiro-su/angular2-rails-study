@@ -2,7 +2,7 @@
 <a [routerLink]="['Hoge']">SPA Link</a>
 <a href="/hoge">Browser Link</a>
 <br>
-<button class="btn btn-danger" (click)="alert()">alert!</button>
+<button (click)="alert()">alert!</button>
 <div>{{ items }}</div>
 <ul *ngFor="#user of users">
   <li>{{ user.name }}: {{ user.age }}</li>
