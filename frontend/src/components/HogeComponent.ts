@@ -9,9 +9,9 @@ import {HomeComponent} from './HomeComponent';
         ROUTER_DIRECTIVES
     ]
 })
-
 export class HogeComponent {
     constructor() {
         console.log('HogeComponent.ts')
+
     }
 }
