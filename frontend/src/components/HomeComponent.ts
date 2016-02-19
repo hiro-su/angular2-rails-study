@@ -5,6 +5,11 @@ import {HogeComponent} from './HogeComponent';
 
 declare var jQuery:any;
 
+interface User {
+    name:string;
+    age:number;
+}
+
 @Component({
     templateUrl: 'templates/home/index.html.js',
     directives: [
@@ -12,8 +17,8 @@ declare var jQuery:any;
     ]
 })
 export class HomeComponent {
-    private items;
-    private users;
+    private items:Array<number>;
+    private users:Array<User>;
 
     constructor() {
         console.log('HomeComponent.ts');
